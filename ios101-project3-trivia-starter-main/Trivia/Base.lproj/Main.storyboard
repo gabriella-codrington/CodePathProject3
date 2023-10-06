@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mi2-3h-i4m">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trivia View Controller-->
+        <scene sceneID="3d3-w2-xdd">
+            <objects>
+                <viewController id="Mi2-3h-i4m" customClass="TriviaViewController" customModule="Trivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Yz-AN-Ic5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6F-l7-GuZ">
+                                <rect key="frame" x="123" y="81" width="146" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Crf-wR-Xdb">
+                                <rect key="frame" x="41" y="491" width="311" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="75" id="4vt-xj-Ahi"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="Ptu-DM-RPJ"/>
+                                    <constraint firstAttribute="width" constant="75" id="R1c-w4-gLO"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="TCQ-qu-YX5"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="cug-0D-9Zc"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="311" id="fS1-LD-BVc"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="qrr-Aq-H3A"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray">
+                                    <attributedString key="attributedTitle"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Boo-tM-EgK">
+                                <rect key="frame" x="41" y="545" width="311" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Dq9-eq-xVh"/>
+                                    <constraint firstAttribute="width" constant="75" id="qDo-mb-fwb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvq-gl-VpJ">
+                                <rect key="frame" x="41" y="599" width="311" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="LVd-RK-o9y"/>
+                                    <constraint firstAttribute="width" constant="75" id="vlA-ny-fbu"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmi-lb-e2q">
+                                <rect key="frame" x="41" y="653" width="311" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="1nj-RK-gzf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="8wU-9r-a5H"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mB5-N0-m21">
+                                <rect key="frame" x="16" y="139" width="361" height="344"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezv-mW-deD">
+                                <rect key="frame" x="82" y="110" width="229" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="p2O-JA-P8R"/>
+                        <color key="backgroundColor" red="0.42484758005562229" green="0.7315315955354581" blue="0.88150376081466675" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Boo-tM-EgK" firstAttribute="top" secondItem="Crf-wR-Xdb" secondAttribute="bottom" constant="8" symbolic="YES" id="3pd-f3-hZz"/>
+                            <constraint firstItem="Crf-wR-Xdb" firstAttribute="top" secondItem="mB5-N0-m21" secondAttribute="bottom" constant="8" symbolic="YES" id="8bv-uJ-gmd"/>
+                            <constraint firstItem="Crf-wR-Xdb" firstAttribute="top" secondItem="mB5-N0-m21" secondAttribute="bottom" constant="8" symbolic="YES" id="Crq-AF-aEC"/>
+                            <constraint firstItem="cmi-lb-e2q" firstAttribute="top" secondItem="jvq-gl-VpJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Dul-6y-2AO"/>
+                            <constraint firstItem="ezv-mW-deD" firstAttribute="top" secondItem="S6F-l7-GuZ" secondAttribute="bottom" constant="8" symbolic="YES" id="GaL-Is-Nif"/>
+                            <constraint firstItem="Crf-wR-Xdb" firstAttribute="top" secondItem="mB5-N0-m21" secondAttribute="bottom" constant="8" symbolic="YES" id="JGW-r4-ZDQ"/>
+                            <constraint firstItem="mB5-N0-m21" firstAttribute="top" secondItem="ezv-mW-deD" secondAttribute="bottom" constant="8" symbolic="YES" id="Yw2-5u-CNp"/>
+                            <constraint firstItem="mB5-N0-m21" firstAttribute="top" secondItem="ezv-mW-deD" secondAttribute="bottom" constant="8" symbolic="YES" id="bNG-e1-zc8"/>
+                            <constraint firstItem="jvq-gl-VpJ" firstAttribute="top" secondItem="Boo-tM-EgK" secondAttribute="bottom" constant="8" symbolic="YES" id="dG1-zn-ZE5"/>
+                            <constraint firstItem="mB5-N0-m21" firstAttribute="top" secondItem="ezv-mW-deD" secondAttribute="bottom" constant="8" symbolic="YES" id="dub-e2-7qR"/>
+                            <constraint firstItem="jvq-gl-VpJ" firstAttribute="top" secondItem="Boo-tM-EgK" secondAttribute="bottom" constant="8" symbolic="YES" id="fRl-8L-9MJ"/>
+                            <constraint firstItem="Boo-tM-EgK" firstAttribute="top" secondItem="Crf-wR-Xdb" secondAttribute="bottom" constant="8" symbolic="YES" id="jdm-Zi-ulM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="categoryLabel" destination="ezv-mW-deD" id="9H5-LE-i4l"/>
+                        <outlet property="multipleChoiceFourButton" destination="cmi-lb-e2q" id="cIf-hc-jd6"/>
+                        <outlet property="multipleChoiceOneButton" destination="Crf-wR-Xdb" id="dkQ-bt-tdY"/>
+                        <outlet property="multipleChoiceThreeButton" destination="jvq-gl-VpJ" id="lHS-Vc-VBi"/>
+                        <outlet property="multipleChoiceTwoButton" destination="Boo-tM-EgK" id="ulI-XL-Gbr"/>
+                        <outlet property="questionNumberLabel" destination="S6F-l7-GuZ" id="gRb-TK-dWj"/>
+                        <outlet property="questionTextView" destination="mB5-N0-m21" id="2Pk-4h-NYP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ci6-o2-hoE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26.717557251908396" y="-28.169014084507044"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
